@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2B3D6CDA-6A4B-9F63-A976-0B8E36CA47C5" containerWithKeyObject="C70952D1-256D-174C-A2C8-7FACA3E52F83" localFKIndex="8C77D351-C0D8-73AA-B674-2E9C58976B2D" name="Jucatori_Echipe_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>DD858CDD-F6FD-2CF0-EAAF-2C4250FC6834</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>Echipe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EAB5C794-63DB-AB10-9B2C-2332F8566339</referredTableID>
+<keyObject>BFD25B6A-DA65-45C2-0548-EA81F42372A5</keyObject>
+<referredKeyID>BFD25B6A-DA65-45C2-0548-EA81F42372A5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_echipa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

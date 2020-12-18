@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="id_echipa_gazda_FK" directorySegmentName="seg_0" id="CB47AA8E-E5D5-F0E1-461D-0F720080A06B">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 18:01:44 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<sourcePk>0D9F96E7-A3CE-AE20-0FEC-7850239EEE6F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>68DE10E2-BD5F-573D-EE24-D4DC79F397D7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3AED5FDF-D895-6BBF-9E1C-4941DFCC91D7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

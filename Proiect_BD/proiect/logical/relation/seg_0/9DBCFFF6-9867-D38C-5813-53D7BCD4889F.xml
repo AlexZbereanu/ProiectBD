@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="jucator_statistica" directorySegmentName="seg_0" id="9DBCFFF6-9867-D38C-5813-53D7BCD4889F">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:24:00 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<sourcePk>A585D874-2D03-99C8-81CC-9BA8CF6BF669</sourcePk>
+<targetPk>64F6A9D6-F342-2DC6-ECCE-3FEFED8B20FD</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1DFC0270-469D-DA47-FAE9-F23181C1FD68</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7FB87975-9C40-D05E-D847-7EC9263F9FB4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

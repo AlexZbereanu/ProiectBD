@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="stadioane-meciuri" directorySegmentName="seg_0" id="693FCFDD-D12C-8A55-4E53-A47308F46D92">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-14 20:01:50 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<sourcePk>7CE0605B-504B-CDA4-4542-578BAB76FBF7</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>81720202-B766-38AB-917D-B6ABB07601AE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3AED5FDF-D895-6BBF-9E1C-4941DFCC91D7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

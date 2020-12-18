@@ -1,0 +1,46 @@
+Titlul temei: Gestionare unor meciuri amicale
+
+Specificatii:
+	
+	Jucatorii:
+		 -id jucator
+		 -nume(NOT NULL)
+		 -prenume
+		 -pozitie va avea o constrangere de a fi ales dintr-o lista  de valori ce reprezinta toate pozitiile posibile pe care le poate lua un jucator
+		 -numar(constrans in intervalul 1 si 99)
+		 -tara natala
+
+	Echipele:
+		-id echipa
+		-nume club
+		-prescurtare(ex: Inter Milano->"INT")(constrans la 3 
+	
+	Stadioanele:
+		-id stadion
+		-numele stadionului
+		-capacitatea sa
+
+	Meciurile:
+		-id meci
+		-data desfasurarii
+		-numar spectatori
+		
+	
+	Rezultatele:
+		-id meci
+		-scor oaspeti
+		-scor gazde
+	
+	Statistici jucatori:
+		-id statistica
+		-numar goluri
+		-numar assist-uri
+
+	
+	
+
+	
+	
+
+	
+	

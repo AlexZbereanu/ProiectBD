@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="echipa_statistici_FK" directorySegmentName="seg_0" id="1785BC4E-0EDF-8D19-FA53-C256423FF8C1">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:22:58 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<sourcePk>0D9F96E7-A3CE-AE20-0FEC-7850239EEE6F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>68DE10E2-BD5F-573D-EE24-D4DC79F397D7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7FB87975-9C40-D05E-D847-7EC9263F9FB4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

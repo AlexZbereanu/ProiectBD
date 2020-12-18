@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FB87975-9C40-D05E-D847-7EC9263F9FB4" name="Statistici">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:08:18 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_statistica" id="C6008F55-F1E4-7870-118D-093CFDA0F810">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:18:26 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_meci" id="DF03E3F6-6EB4-89F7-B677-696D5CB61D4F">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:34:51 UTC</createdTime>
+<generatorID>5FEF4D45-5C82-79D9-52C6-E76F19B055E7</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<referedAttribute>7EFC9514-120B-8653-D5A8-43C67066FC14</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_echipa" id="4DFA3FA5-1F60-DDEA-1F25-C236AE0FB5F0">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:22:58 UTC</createdTime>
+<generatorID>1785BC4E-0EDF-8D19-FA53-C256423FF8C1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<referedAttribute>B36C6E4A-039D-DA9C-3E4E-90D6FDB4D43D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_jucator" id="3D4F2979-DAD4-0FC6-B9E1-935D5491D035">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-15 12:08:37 UTC</createdTime>
+<generatorID>9DBCFFF6-9867-D38C-5813-53D7BCD4889F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<referedAttribute>4A7B6C25-6750-6461-52D0-0251BCA316BC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_goluri" id="8536D2FE-0A9F-1364-938E-366B10CF55F6">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:08:33 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>nr_goluri_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_goluri &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_assist" id="16723A2D-23FB-C922-C95D-4817B673E18D">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:09:40 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>nr_assist_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_assist &gt;= 0 "/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="64F6A9D6-F342-2DC6-ECCE-3FEFED8B20FD" name="Statistici PK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:19:12 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C6008F55-F1E4-7870-118D-093CFDA0F810</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAB5C794-63DB-AB10-9B2C-2332F8566339" name="Echipe">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>68DE10E2-BD5F-573D-EE24-D4DC79F397D7</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_echipa" id="B6C8A16F-9483-A081-62C9-68F7C26F29E5">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>B36C6E4A-039D-DA9C-3E4E-90D6FDB4D43D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stadioane_id_stadion" id="B11DB675-67AB-D4D9-4225-9F2B54B71A1A">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>CF49E301-32DB-AD0E-C68E-7AB7980E6AB5</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A8B34EA-5827-5616-BB53-0357AE009002" referredColumn="F5D56918-5443-D768-E060-2988D3159956"/>
+</associations>
+</Column>
+<Column name="nume_club" id="CECEEFE5-CC83-F74C-59CB-93AB669DC0D3">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>0459A5D6-F389-CF2E-41AF-860E4240F76A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_prescurtat" id="5B590CBB-629C-D6CE-154D-A5FBDEA09B34">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>0797FE18-FE82-17FF-EEAE-3ABC9C3DF0A1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>nume_prescurtat_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume_prescurtat) = 3"/>
+</checkConstraint>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFD25B6A-DA65-45C2-0548-EA81F42372A5" name="Echipe_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>0D9F96E7-A3CE-AE20-0FEC-7850239EEE6F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6C8A16F-9483-A081-62C9-68F7C26F29E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A4E7CA1-BBA9-DA7F-939A-E0C3940586AE" name="Echipe_nume_club_UN">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>BD562B9A-9102-5477-3973-552B08348942</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CECEEFE5-CC83-F74C-59CB-93AB669DC0D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33C55969-D56F-9849-BF49-1B26244E9884" name="Echipe_Stadioane_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>5140EF96-3AAC-805D-265D-C01D259D382A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B11DB675-67AB-D4D9-4225-9F2B54B71A1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

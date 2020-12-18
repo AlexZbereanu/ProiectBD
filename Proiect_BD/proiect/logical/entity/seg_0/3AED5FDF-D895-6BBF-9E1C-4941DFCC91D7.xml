@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3AED5FDF-D895-6BBF-9E1C-4941DFCC91D7" name="Meciuri">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 17:56:53 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_meci" id="7EFC9514-120B-8653-D5A8-43C67066FC14">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 17:59:56 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_echipa_gazda" id="BF7299AD-5933-A3D7-F1BB-7EE5855509B8">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 18:01:44 UTC</createdTime>
+<generatorID>CB47AA8E-E5D5-F0E1-461D-0F720080A06B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<referedAttribute>B36C6E4A-039D-DA9C-3E4E-90D6FDB4D43D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_echipa_oaspeti" id="7ECFA03B-2FE0-311E-2BC9-4E0E24A51BBF">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 18:02:34 UTC</createdTime>
+<generatorID>2931EA59-C2A5-A1F8-7F70-238B6BB6B11D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<referedAttribute>B36C6E4A-039D-DA9C-3E4E-90D6FDB4D43D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_stadion" id="C49CED23-D2AA-6074-18D7-2EFBF6591E30">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-14 20:01:50 UTC</createdTime>
+<generatorID>693FCFDD-D12C-8A55-4E53-A47308F46D92</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<referedAttribute>920925CC-9F22-C207-8FA0-F63E3F53D59C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_meci" id="9F721F9F-72E6-1DFC-1B9B-A43ED0D50E57">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 17:59:27 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name=" numar_spectatori" id="2B51CFD8-CF42-3E14-9074-5EA7D260F70A">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 17:59:57 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>numar_spectatori_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C1FBDE4E-F2D1-D072-A1B0-393E53168289" name="Meciuri PK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 18:00:57 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7EFC9514-120B-8653-D5A8-43C67066FC14</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

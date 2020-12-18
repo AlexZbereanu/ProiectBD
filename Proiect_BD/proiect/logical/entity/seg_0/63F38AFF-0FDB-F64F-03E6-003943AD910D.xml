@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="63F38AFF-0FDB-F64F-03E6-003943AD910D" name="Rezultate">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 17:57:04 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="scor_echipa_gazda" id="C60A150B-01F3-A089-7AD9-6824B63CFE25">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 17:57:16 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>scor_gazda_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="scor_echipa_gazda &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="scor_echipa_oaspeti" id="ACADE7A7-2D44-06E2-B54E-A88FEC2CB994">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 17:57:16 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>scor_oaspeti_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="scor_echipa_oaspeti &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_meci" id="70A12D40-40BF-4FFD-91CC-F47550A1B933">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 18:24:59 UTC</createdTime>
+<generatorID>C21A6738-7B68-7EBB-DE28-CD021CE0B776</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<referedAttribute>7EFC9514-120B-8653-D5A8-43C67066FC14</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

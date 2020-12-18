@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="stadioane_echipe_FK" directorySegmentName="seg_0" id="5140EF96-3AAC-805D-265D-C01D259D382A">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 17:12:50 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<sourcePk>7CE0605B-504B-CDA4-4542-578BAB76FBF7</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>au mai multe</nameOnSource>
+<nameOnTarget>are un</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>81720202-B766-38AB-917D-B6ABB07601AE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>68DE10E2-BD5F-573D-EE24-D4DC79F397D7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

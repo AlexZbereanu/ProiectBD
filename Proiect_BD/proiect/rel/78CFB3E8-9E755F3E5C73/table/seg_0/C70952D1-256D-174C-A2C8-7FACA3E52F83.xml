@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C70952D1-256D-174C-A2C8-7FACA3E52F83" name="Jucatori">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>1DFC0270-469D-DA47-FAE9-F23181C1FD68</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_jucator" id="5E591856-1DDA-78B0-B377-8E17B7A9C955">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>4A7B6C25-6750-6461-52D0-0251BCA316BC</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>id_jucator_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>id_jucator_trg</autoIncrementTriggerName>
+</Column>
+<Column name="Echipe_id_echipa" id="44C8948A-FF6C-01CE-1877-EAD3A233D727">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>32106BA9-8CA5-B28F-6EE8-7743B196C0E0</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B3D6CDA-6A4B-9F63-A976-0B8E36CA47C5" referredColumn="B6C8A16F-9483-A081-62C9-68F7C26F29E5"/>
+</associations>
+</Column>
+<Column name="nume" id="95F26570-8BC2-933A-6448-8B623A6CD0DB">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>99670E21-708C-28CD-BF53-B4C69BC9F257</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>nume_jucator_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume) &gt;= 1 AND regexp_like(nume, &apos;[a-z]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="DB4FEC2A-CBFF-70F7-CA75-2B4DBCFA53CF">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>B99780C4-6A8D-BBD4-9863-59DD8750172D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume) &gt;= 1 AND regexp_like(prenume, &apos;[a-z]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numar" id="B21DB1F8-F9F2-5FF7-C0A0-760371A594EE">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>F608FA40-E707-72D9-44C4-0E92B9DAF0B6</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>numar_jucator_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="between 1 and 99"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pozitie" id="7E48EBA5-DFA5-6693-9420-99BD5F52DD14">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>CDE5FA6C-1741-1297-C288-74C55EBEC0C7</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>pozitie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pozitie = &apos;GK&apos; OR pozitie = &apos;DF&apos; OR pozitie = &apos;MD&apos; OR pozitie = &apos;AT&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tara" id="3448DEEF-4FFC-9166-CCF3-990B68586D5F">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>EC90F4CB-89A4-D684-F69A-945A9A3C87EB</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0542F8E-1205-6640-9F0F-B910D6B784CE" name="Jucatori_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>A585D874-2D03-99C8-81CC-9BA8CF6BF669</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E591856-1DDA-78B0-B377-8E17B7A9C955"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C77D351-C0D8-73AA-B674-2E9C58976B2D" name="Jucatori_Echipe_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>DD858CDD-F6FD-2CF0-EAAF-2C4250FC6834</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44C8948A-FF6C-01CE-1877-EAD3A233D727"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

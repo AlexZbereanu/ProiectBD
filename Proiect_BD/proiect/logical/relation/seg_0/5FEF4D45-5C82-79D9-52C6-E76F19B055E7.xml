@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="meci_statistici_FK" directorySegmentName="seg_0" id="5FEF4D45-5C82-79D9-52C6-E76F19B055E7">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-27 06:34:51 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<sourcePk>C1FBDE4E-F2D1-D072-A1B0-393E53168289</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3AED5FDF-D895-6BBF-9E1C-4941DFCC91D7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7FB87975-9C40-D05E-D847-7EC9263F9FB4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

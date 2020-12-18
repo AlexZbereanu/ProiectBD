@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D974F102-17A9-0B04-161E-45C135CB3C30" name="Rezultate">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>63F38AFF-0FDB-F64F-03E6-003943AD910D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="scor_echipa_gazda" id="C9E1B7AC-6E8D-1843-66FC-151381DFB886">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>C60A150B-01F3-A089-7AD9-6824B63CFE25</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>scor_gazda_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="scor_echipa_gazda &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="scor_echipa_oaspeti" id="6801D43A-A6E2-4ABA-B9B5-437E5F33E803">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>ACADE7A7-2D44-06E2-B54E-A88FEC2CB994</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>scor_oaspeti_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="scor_echipa_oaspeti &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Meciuri_id_meci" id="CF0F4A38-919A-D9CE-CF2C-4F7F5DFC96F0">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>70A12D40-40BF-4FFD-91CC-F47550A1B933</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F64A2AF-9396-0686-3DDB-0193C9B6AEE0" referredColumn="B7257EB4-F8E6-4B85-CC19-702E6F07D440"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD1B1DB7-D561-5DB0-81ED-7037F99162AF" name="Rezultate__IDX">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C21A6738-7B68-7EBB-DE28-CD021CE0B776</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CF0F4A38-919A-D9CE-CF2C-4F7F5DFC96F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C61024E2-4008-06D8-285A-AC530CF90282" name="Rezultate_Meciuri_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>C21A6738-7B68-7EBB-DE28-CD021CE0B776</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF0F4A38-919A-D9CE-CF2C-4F7F5DFC96F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1DFC0270-469D-DA47-FAE9-F23181C1FD68" name="Jucatori">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:41:00 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_jucator" id="4A7B6C25-6750-6461-52D0-0251BCA316BC">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:48:09 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_echipa" id="32106BA9-8CA5-B28F-6EE8-7743B196C0E0">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:52:30 UTC</createdTime>
+<generatorID>DD858CDD-F6FD-2CF0-EAAF-2C4250FC6834</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<referedAttribute>B36C6E4A-039D-DA9C-3E4E-90D6FDB4D43D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="99670E21-708C-28CD-BF53-B4C69BC9F257">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:45:45 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>nume_jucator_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume) &gt;= 1 AND regexp_like(nume, &apos;[a-z]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="B99780C4-6A8D-BBD4-9863-59DD8750172D">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:45:46 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume) &gt;= 1 AND regexp_like(prenume, &apos;[a-z]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numar" id="F608FA40-E707-72D9-44C4-0E92B9DAF0B6">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:47:13 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>numar_jucator_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="between 1 and 99"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pozitie" id="CDE5FA6C-1741-1297-C288-74C55EBEC0C7">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:46:27 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<constraintName>pozitie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pozitie = &apos;GK&apos; OR pozitie = &apos;DF&apos; OR pozitie = &apos;MD&apos; OR pozitie = &apos;AT&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tara" id="EC90F4CB-89A4-D684-F69A-945A9A3C87EB">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:47:44 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A585D874-2D03-99C8-81CC-9BA8CF6BF669" name="Jucatori PK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-11-22 16:48:17 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A7B6C25-6750-6461-52D0-0251BCA316BC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Statistici" directorySegmentName="seg_0" id="D059D1BA-DD19-4058-301F-1860F6940A47">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_statistica" id="0447BB05-098F-A517-8A3E-8625BF89C37B">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Meciuri_id_meci" id="25E3B52F-E216-0823-D5D8-9964630B9B68">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nr_goluri" id="97D646B4-4E1A-4ECB-EB3E-7D96A03465E6">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Echipe_id_echipa" id="AD4DA6DD-D277-BDF9-7A1E-96197CF023D3">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Jucatori_id_jucator" id="C1C96AAF-6C9B-5EE7-1E8A-A291AA2DA28B">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nr_assist" id="FC868B8A-6B0E-7E7F-676C-1E9D2B72D859">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Statistici_Jucatori_FK" id="1E63BC87-D780-CF3B-917B-4677CB36B011">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Statistici_Echipe_FK" id="328B8394-58F1-1A2F-ED17-361A49334B88">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Statistici_Meciuri_FK" id="6409622F-61C9-5608-13B8-F908E5169E1B">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Statistici_PK" id="1B4497CA-49D1-E007-719D-0F2BFF19A2B9">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

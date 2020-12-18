@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Meciuri" directorySegmentName="seg_0" id="E9569220-74E3-FD7F-762D-F2F7AE42D3A8">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Echipe_id_echipa_gazda" id="1422302D-F164-AF6A-9E9F-DA723582CDC4">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Stadioane_id_stadion" id="68411F40-516C-857C-FF3C-2A56C8A82A0F">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Echipe_id_echipa_oaspeti" id="7DB9F3D6-5AA5-F03F-6644-4F843CB631AD">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_meci" id="A4581035-8F80-1BDC-26C8-2909938C0E62">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_meci" id="B7257EB4-F8E6-4B85-CC19-702E6F07D440">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="numar_spectatori" id="C307CDDD-6D20-5C35-9583-5C49E8C04503">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Meciuri_Echipe_FK" id="2D29BF20-8DF5-1160-6825-E4709BBBCD79">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Meciuri_Stadioane_FK" id="9B0628CC-3E9B-525E-5812-0164D44EE37F">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Meciuri_Echipe_FKv2" id="C1C39BA0-0888-C4A8-4709-4CB200D42A64">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Meciuri_PK" id="8939F782-B6D5-3B8A-B926-30654C1A2AC1">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

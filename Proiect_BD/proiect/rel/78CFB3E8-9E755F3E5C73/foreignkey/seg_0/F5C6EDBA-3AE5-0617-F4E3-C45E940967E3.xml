@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5C6EDBA-3AE5-0617-F4E3-C45E940967E3" containerWithKeyObject="D059D1BA-DD19-4058-301F-1860F6940A47" localFKIndex="1E63BC87-D780-CF3B-917B-4677CB36B011" name="Statistici_Jucatori_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>9DBCFFF6-9867-D38C-5813-53D7BCD4889F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>Jucatori</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C70952D1-256D-174C-A2C8-7FACA3E52F83</referredTableID>
+<keyObject>C0542F8E-1205-6640-9F0F-B910D6B784CE</keyObject>
+<referredKeyID>C0542F8E-1205-6640-9F0F-B910D6B784CE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_jucator</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

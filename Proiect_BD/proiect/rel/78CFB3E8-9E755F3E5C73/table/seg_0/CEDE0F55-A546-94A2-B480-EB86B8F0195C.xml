@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEDE0F55-A546-94A2-B480-EB86B8F0195C" name="Stadioane">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>81720202-B766-38AB-917D-B6ABB07601AE</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_stadion" id="F5D56918-5443-D768-E060-2988D3159956">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>920925CC-9F22-C207-8FA0-F63E3F53D59C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_stadion" id="565C2269-1662-5C1A-3BCB-FE9859A5BF54">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>AFA7BFBD-4644-54F3-940D-471160C15B88</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacitate" id="271F16FC-60B9-3484-BF93-6DD6DAA3C7D1">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>4CA1215F-A83A-44E7-AA6A-91875C24E7DC</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>capacitate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="capacitate &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB9B115F-A036-37B6-E288-CD4CC0D3717F" name="Stadioane_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>7CE0605B-504B-CDA4-4542-578BAB76FBF7</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5D56918-5443-D768-E060-2988D3159956"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

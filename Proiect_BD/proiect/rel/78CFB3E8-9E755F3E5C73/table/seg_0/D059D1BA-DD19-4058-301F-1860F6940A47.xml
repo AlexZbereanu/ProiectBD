@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D059D1BA-DD19-4058-301F-1860F6940A47" name="Statistici">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>7FB87975-9C40-D05E-D847-7EC9263F9FB4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_statistica" id="0447BB05-098F-A517-8A3E-8625BF89C37B">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>C6008F55-F1E4-7870-118D-093CFDA0F810</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Meciuri_id_meci" id="25E3B52F-E216-0823-D5D8-9964630B9B68">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>DF03E3F6-6EB4-89F7-B677-696D5CB61D4F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="020C2881-1119-F726-01EE-8DB5A3011285" referredColumn="B7257EB4-F8E6-4B85-CC19-702E6F07D440"/>
+</associations>
+</Column>
+<Column name="Echipe_id_echipa" id="AD4DA6DD-D277-BDF9-7A1E-96197CF023D3">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>4DFA3FA5-1F60-DDEA-1F25-C236AE0FB5F0</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51B2AF44-75D0-86D0-EAD0-2578E999AE8B" referredColumn="B6C8A16F-9483-A081-62C9-68F7C26F29E5"/>
+</associations>
+</Column>
+<Column name="Jucatori_id_jucator" id="C1C96AAF-6C9B-5EE7-1E8A-A291AA2DA28B">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>3D4F2979-DAD4-0FC6-B9E1-935D5491D035</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5C6EDBA-3AE5-0617-F4E3-C45E940967E3" referredColumn="5E591856-1DDA-78B0-B377-8E17B7A9C955"/>
+</associations>
+</Column>
+<Column name="nr_goluri" id="97D646B4-4E1A-4ECB-EB3E-7D96A03465E6">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>8536D2FE-0A9F-1364-938E-366B10CF55F6</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>nr_goluri_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_goluri &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_assist" id="FC868B8A-6B0E-7E7F-676C-1E9D2B72D859">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>16723A2D-23FB-C922-C95D-4817B673E18D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>nr_assist_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_assist &gt;= 0 "/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B4497CA-49D1-E007-719D-0F2BFF19A2B9" name="Statistici_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>64F6A9D6-F342-2DC6-ECCE-3FEFED8B20FD</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0447BB05-098F-A517-8A3E-8625BF89C37B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="328B8394-58F1-1A2F-ED17-361A49334B88" name="Statistici_Echipe_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>1785BC4E-0EDF-8D19-FA53-C256423FF8C1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD4DA6DD-D277-BDF9-7A1E-96197CF023D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E63BC87-D780-CF3B-917B-4677CB36B011" name="Statistici_Jucatori_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>9DBCFFF6-9867-D38C-5813-53D7BCD4889F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1C96AAF-6C9B-5EE7-1E8A-A291AA2DA28B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6409622F-61C9-5608-13B8-F908E5169E1B" name="Statistici_Meciuri_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>5FEF4D45-5C82-79D9-52C6-E76F19B055E7</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25E3B52F-E216-0823-D5D8-9964630B9B68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

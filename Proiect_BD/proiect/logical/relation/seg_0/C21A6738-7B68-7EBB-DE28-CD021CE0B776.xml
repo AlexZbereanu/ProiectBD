@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="meci_rez_FK" directorySegmentName="seg_0" id="C21A6738-7B68-7EBB-DE28-CD021CE0B776">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 18:24:59 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="78CFB3E8-155B-8495-B205-9E755F3E5C73" value="true"/>
+</engineerTo>
+<sourcePk>C1FBDE4E-F2D1-D072-A1B0-393E53168289</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3AED5FDF-D895-6BBF-9E1C-4941DFCC91D7</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>63F38AFF-0FDB-F64F-03E6-003943AD910D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

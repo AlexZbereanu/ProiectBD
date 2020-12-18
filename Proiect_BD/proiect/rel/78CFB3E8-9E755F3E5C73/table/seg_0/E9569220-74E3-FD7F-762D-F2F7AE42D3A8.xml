@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9569220-74E3-FD7F-762D-F2F7AE42D3A8" name="Meciuri">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>3AED5FDF-D895-6BBF-9E1C-4941DFCC91D7</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_meci" id="B7257EB4-F8E6-4B85-CC19-702E6F07D440">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>7EFC9514-120B-8653-D5A8-43C67066FC14</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Echipe_id_echipa_gazda" id="1422302D-F164-AF6A-9E9F-DA723582CDC4">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>BF7299AD-5933-A3D7-F1BB-7EE5855509B8</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8E37952-2C3C-E8E4-00AA-3C3D346329C0" referredColumn="B6C8A16F-9483-A081-62C9-68F7C26F29E5"/>
+</associations>
+</Column>
+<Column name="Echipe_id_echipa_oaspeti" id="7DB9F3D6-5AA5-F03F-6644-4F843CB631AD">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>7ECFA03B-2FE0-311E-2BC9-4E0E24A51BBF</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E16408E2-E76F-FE15-EE3A-A30FC4FE0947" referredColumn="B6C8A16F-9483-A081-62C9-68F7C26F29E5"/>
+</associations>
+</Column>
+<Column name="Stadioane_id_stadion" id="68411F40-516C-857C-FF3C-2A56C8A82A0F">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>C49CED23-D2AA-6074-18D7-2EFBF6591E30</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5644A0BA-D454-9689-5BD1-79B0C3876A6F" referredColumn="F5D56918-5443-D768-E060-2988D3159956"/>
+</associations>
+</Column>
+<Column name="data_meci" id="A4581035-8F80-1BDC-26C8-2909938C0E62">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>9F721F9F-72E6-1DFC-1B9B-A43ED0D50E57</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numar_spectatori" id="C307CDDD-6D20-5C35-9583-5C49E8C04503">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>2B51CFD8-CF42-3E14-9074-5EA7D260F70A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>numar_spectatori_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8939F782-B6D5-3B8A-B926-30654C1A2AC1" name="Meciuri_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>C1FBDE4E-F2D1-D072-A1B0-393E53168289</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7257EB4-F8E6-4B85-CC19-702E6F07D440"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D29BF20-8DF5-1160-6825-E4709BBBCD79" name="Meciuri_Echipe_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>CB47AA8E-E5D5-F0E1-461D-0F720080A06B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1422302D-F164-AF6A-9E9F-DA723582CDC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1C39BA0-0888-C4A8-4709-4CB200D42A64" name="Meciuri_Echipe_FKv2">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>2931EA59-C2A5-A1F8-7F70-238B6BB6B11D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DB9F3D6-5AA5-F03F-6644-4F843CB631AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B0628CC-3E9B-525E-5812-0164D44EE37F" name="Meciuri_Stadioane_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2020-12-17 22:10:14 UTC</createdTime>
+<generatorID>693FCFDD-D12C-8A55-4E53-A47308F46D92</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68411F40-516C-857C-FF3C-2A56C8A82A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
